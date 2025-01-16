@@ -13,6 +13,8 @@ h2 {
   font-style: italic;
   font-variant: small-caps;
   font-weight: bold;
+  text-decoration: overline;
+  letter-spacing: 10px;
 }
 
 p {
@@ -20,8 +22,46 @@ p {
   color: red;
   font-size: 1.2em;
 }
+
+.izq {
+  text-align: left;
+}
+
+.jus {
+  text-align: justify;
+  text-transform: capitalize;
+}
+
+.der {
+  text-align: right;
+}
+
+.cen {
+  text-align: center;
+}
+
 div {
   width: 60%;
   text-align: center;
   margin: auto;
+}
+
+/* pseudo elementos*/
+
+a:link {
+  color: green;
+  text-decoration: overline;
+}
+a:visited {
+  color: red;
+  text-orientation: revert;
+}
+a:hover {
+  color: hotpink;
+  letter-spacing: 10px;
+  font-size: 4em;
+}
+a:active {
+  color: peru;
+  text-transform: uppercase;
 }
