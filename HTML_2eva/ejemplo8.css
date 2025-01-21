@@ -1,0 +1,29 @@
+div {
+  width: 60%;
+  margin: auto;
+  border: 1px solid navy;
+  padding: 10px;
+}
+
+h2 {
+  color: black;
+  font-family: arial, verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+p {
+  color: navy;
+  font-size: 1.4;
+}
+
+img#flota {
+  float: left;
+  margin: 20px;
+  width: 25%;
+  max-height: 200px;
+}
+
+.para {
+  clear: both;
+}
