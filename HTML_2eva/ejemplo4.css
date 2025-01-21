@@ -1,0 +1,57 @@
+body {
+  /* background-color: #ff0000; */
+  color: black;
+  font-size: 1.5em;
+  background-image: url("../imagenes/gojo/images.jpg");
+  background-repeat: no-repeat;
+  background-position: center, center;
+  border: dotted;
+  border-color: red;
+}
+
+div {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+h2 {
+  color: black;
+  font-family: arial, verdana, sans-serif;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: overline;
+  letter-spacing: 10px;
+}
+
+p {
+  /* background-color: #343434; */
+  color: black;
+  font-size: 1.2em;
+}
+
+p#der {
+  text-align: right;
+  background-color: slateblue;
+}
+
+p#jus {
+  text-align: justify;
+  background-color: orange;
+}
+li {
+  text-align: left;
+}
+
+a {
+  color: hotpink;
+}
+
+a.blanco {
+  color: #ffbb00;
+}
+
+a.tinto {
+  color: #ffbb00;
+}

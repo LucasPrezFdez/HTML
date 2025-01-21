@@ -1,0 +1,41 @@
+div {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+div#democrats {
+  background-color: blue;
+}
+
+div#republicans {
+  background-color: red;
+}
+
+h2 {
+  color: black;
+  font-family: arial, verdana, sans-serif;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: overline;
+  letter-spacing: 10px;
+}
+
+p {
+  /* background-color: #343434; */
+  color: navy;
+  font-size: 1.2em;
+}
+
+span.ventaja1 {
+  color: red;
+}
+
+span.ventaja2 {
+  background-color: orange;
+}
+
+span.ventaja3 {
+  background-color: violet;
+}
