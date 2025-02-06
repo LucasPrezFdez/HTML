@@ -1,0 +1,42 @@
+body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 70px 70px 70px 70px;
+  grid-template-columns: 100px 100px 100px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: rgba(230, 183, 98, 0.651);
+  color: brown;
+
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 15;
+  border: 2px solid orange;
+  text-align: left;
+}
+
+.a {
+  grid-area: 1 / 1 / 2 / 3; /* fila primero y despues columna start y end */
+}
+.b {
+  grid-area: 1 / 2 / 3 / 4;
+}
+.c {
+  grid-area: 2 / 1 / 5 / 2;
+}
+.d {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.e {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.f {
+  grid-area: 4 / 3 / 5 / 4;
+}

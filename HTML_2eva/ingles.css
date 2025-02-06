@@ -1,0 +1,61 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff; /* AliceBlue */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  background: #ffffff; /* White */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50; /* Midnight Blue */
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: #34495e; /* Wet Asphalt */
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bdc3c7; /* Silver */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ecf0f1; /* Clouds */
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background: #3498db; /* Peter River */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background: #2980b9; /* Belize Hole */
+}

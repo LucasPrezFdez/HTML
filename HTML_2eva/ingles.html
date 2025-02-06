@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Website Questionnaire</title>
+    <link rel="stylesheet" href="ingles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Client Website Questionnaire</h1>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="business">Business Name:</label>
+        <input type="text" id="business" name="business" required />
+
+        <label for="description">Business Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          required
+        ></textarea>
+
+        <label for="goals">What are your goals for this website?</label>
+        <textarea id="goals" name="goals" rows="4" required></textarea>
+
+        <label for="features">What features do you need on your website?</label>
+        <textarea id="features" name="features" rows="4" required></textarea>
+
+        <label for="budget">What is your budget for this project?</label>
+        <input type="text" id="budget" name="budget" required />
+
+        <label for="deadline"
+          >What is your desired deadline for the project?</label
+        >
+        <input type="date" id="deadline" name="deadline" required />
+
+        <label for="reference"
+          >Do you have any reference websites you like?</label
+        >
+        <textarea id="reference" name="reference" rows="4"></textarea>
+
+        <label for="additional">Any additional information or requests?</label>
+        <textarea id="additional" name="additional" rows="4"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
