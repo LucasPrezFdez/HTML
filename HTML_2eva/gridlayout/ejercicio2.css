@@ -1,0 +1,62 @@
+body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+  border: #f35a13 10px solid;
+  grid-template-columns: repeat(3, [col] auto);
+  grid-template-rows: repeat(4, [row] auto);
+  background-color: #fff;
+  color: #444;
+  border: 3px solid rgb(248, 101, 3);
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.poper {
+  padding: 10px;
+  background-color: lemonchiffon;
+  color: orange;
+  border: 3px solid rgb(228, 228, 135);
+  border-radius: 5px;
+}
+
+.box {
+  background-color: rgba(230, 136, 59, 0.74);
+  color: #f35a13;
+  border-radius: 5px;
+  border-color: orange;
+  padding: 20px;
+  font-size: 100%;
+  text-align: left;
+}
+
+.a {
+  grid-column: col 1 / span 3;
+  grid-row: row;
+  border-bottom: 3px solid rgb(248, 101, 3);
+}
+.b {
+  grid-column: col 1 / span 1;
+  grid-row: row 2 / row 4;
+  border-right: 3px solid rgb(248, 101, 3);
+}
+.c {
+  grid-column: col 2 / span 1;
+  grid-row: row 2;
+  border-right: 3px solid rgb(248, 101, 3);
+}
+.d {
+  grid-column: col 3 / span 1;
+  grid-row: row 2;
+  border-bottom: 3px solid rgb(248, 101, 3);
+}
+
+.e {
+  grid-column: col 2 / span 1;
+  grid-row: row 3;
+  border-right: 3px solid rgb(248, 101, 3);
+  border-top: 3px solid rgb(248, 101, 3);
+}
