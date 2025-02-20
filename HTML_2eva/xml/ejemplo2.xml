@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejemplo2.xsd">
+    <note>
+        <to>Tove</to>
+        <from>Jani</from>
+        <heading>Reminder</heading>
+        <body>Don`t forget me this weekend!</body>
+    </note>
+    <note>
+        <to>Rafa</to>
+        <from>Jimy</from>
+        <heading>Recordatorio</heading>
+        <body>Don`t forget me this weekend!</body>
+    </note>
+    <note>
+        <to>Diego</to>
+        <from>Juan</from>
+        <heading>Centrate</heading>
+        <body>Deixa iso, home!</body>
+    </note>
+</agenda>
