@@ -3,7 +3,16 @@
     <xs:element name="agenda">
         <xs:complexType>
             <xs:sequence>
-
+                <xs:element name="note" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="to" type="xs:string" />
+                            <xs:element name="from" type="xs:string" />
+                            <xs:element name="heading" type="xs:string" />
+                            <xs:element name="body" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
