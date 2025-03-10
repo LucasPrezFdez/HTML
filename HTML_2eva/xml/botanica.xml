@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<botanica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="botanica.xsd">
+    <planta>
+        <comun>Rosa</comun>
+        <cientifico>Rosa</cientifico>
+        <zona>Jardín</zona>
+        <luz>Sol</luz>
+        <precio>5.99</precio>
+        <disponibilidad>Disponible</disponibilidad>
+    </planta>
+    <planta>
+        <comun>Girasol</comun>
+        <cientifico>Helianthus annuus</cientifico>
+        <zona>Campo</zona>
+        <luz>Sol</luz>
+        <precio>2.50</precio>
+        <disponibilidad>Disponible</disponibilidad>
+    </planta>
+    <planta>
+        <comun>Tulipán</comun>
+        <cientifico>Tulipa</cientifico>
+        <zona>Jardín</zona>
+        <luz>Sol</luz>
+        <precio>3.75</precio>
+        <disponibilidad>No disponible</disponibilidad>
+    </planta>
+</botanica>

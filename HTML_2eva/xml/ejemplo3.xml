@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CATALOG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="ejemplo3.xsd">
+    xsi:noNamespaceSchemaLocation="ejemplo3.xsd">
     <CD>
         <TITLE>Empire Burlesque</TITLE>
         <ARTIST>Bob Dylan</ARTIST>
