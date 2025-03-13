@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+    <xs:element name="raiz">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="clientes" />
+                <xs:element ref="pedidos" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="clientes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cliente" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="cliente">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CompanyName" type="xs:string" />
+                <xs:element name="ContactName" type="xs:string" />
+                <xs:element name="ContactTitle" type="xs:string" />
+                <xs:element name="Phone" type="xs:string" />
+                <xs:element name="Fax" type="xs:string" minOccurs="0" />
+                <xs:element name="FullAddress">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Address" type="xs:string" />
+                            <xs:element name="City" type="xs:string" />
+                            <xs:element name="Region" type="xs:string" />
+                            <xs:element name="PostalCode" type="xs:string" />
+                            <xs:element name="Country" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="clienteID" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pedidos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pedido" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pedido">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="clienteID" type="xs:string" />
+                <xs:element name="EmployeeID" type="xs:integer" />
+                <xs:element name="pedidoDate" type="xs:string" />
+                <xs:element name="RequiredDate" type="xs:string" />
+                <xs:element ref="ShipInfo" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ShipInfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ShipVia" type="xs:integer" />
+                <xs:element name="Freight" type="xs:double" />
+                <xs:element name="ShipName" type="xs:string" />
+                <xs:element name="ShipAddress" type="xs:string" />
+                <xs:element name="ShipCity" type="xs:string" />
+                <xs:element name="ShipRegion" type="xs:string" />
+                <xs:element name="ShipPostalCode" type="xs:integer" />
+                <xs:element name="ShipCountry" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="ShippedDate" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

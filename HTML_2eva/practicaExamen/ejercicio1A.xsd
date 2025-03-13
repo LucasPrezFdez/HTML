@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="PurchaseOrders">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="PurchaseOrder"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="PurchaseOrder">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="Address" maxOccurs="unbounded" />
+                <xs:element ref="DeliveryNotes" minOccurs="0" />
+                <xs:element ref="Items" />
+            </xs:sequence>
+            <xs:attribute name="PurchaseOrderNumber" type="xs:integer" use="required" />
+            <xs:attribute name="OrderDate" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="Address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Name" type="xs:string" />
+                <xs:element name="Street" type="xs:string" />
+                <xs:element name="City" type="xs:string" />
+                <xs:element name="State" type="xs:string" />
+                <xs:element name="Zip" type="xs:integer" />
+                <xs:element name="Country" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="Type" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="DeliveryNotes" type="xs:string" />
+    <xs:element name="Items">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Item" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="Item">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ProductName" type="xs:string" />
+                <xs:element name="Quantity" type="xs:integer" />
+                <xs:element name="USPrice" type="xs:decimal" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="ShipDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="PartNumber" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

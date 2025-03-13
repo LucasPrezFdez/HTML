@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TVSCHEDULE NAME="Programacion" >
+<TVSCHEDULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejercicio2A.xsd">
+
     <CHANNEL CHAN="Antena3">
         <BANNER>Las mejores series</BANNER>
         <DAY>
@@ -38,7 +40,8 @@
     </CHANNEL>
     <CHANNEL CHAN="Telecinco1">
         <BANNER>El entretenimiento por bandera</BANNER>
-        <DAY><DATE>25 de Julio</DATE>
+        <DAY>
+            <DATE>25 de Julio</DATE>
             <HOLIDAY>La isla</HOLIDAY>
             <HOLIDAY>La pelicula del festivo</HOLIDAY>
         </DAY>

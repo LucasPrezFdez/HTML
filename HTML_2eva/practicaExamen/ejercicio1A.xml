@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="ejercicio1A.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<PurchaseOrders>
+<PurchaseOrders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejercicio1A.xsd">
+
     <PurchaseOrder PurchaseOrderNumber="99503" OrderDate="1999-10-20">
         <Address Type="Shipping">
             <Name>Ellen Adams</Name>

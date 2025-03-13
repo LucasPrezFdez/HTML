@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<raiz >
+<raiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejercicio1B.xsd">
+
     <clientes>
         <cliente clienteID="GREAL">
             <CompanyName>Great Lakes Food Market</CompanyName>
@@ -89,8 +91,8 @@
                 <ShipCountry>USA</ShipCountry>
             </ShipInfo>
         </pedido>
-        
-       
+
+
         <pedido>
             <clienteID>GREAL</clienteID>
             <EmployeeID>6</EmployeeID>
@@ -107,7 +109,7 @@
                 <ShipCountry>USA</ShipCountry>
             </ShipInfo>
         </pedido>
-       
+
         <pedido>
             <clienteID>GREAL</clienteID>
             <EmployeeID>4</EmployeeID>
@@ -124,7 +126,7 @@
                 <ShipCountry>USA</ShipCountry>
             </ShipInfo>
         </pedido>
-        
+
         <pedido>
             <clienteID>GREAL</clienteID>
             <EmployeeID>4</EmployeeID>
@@ -141,8 +143,8 @@
                 <ShipCountry>USA</ShipCountry>
             </ShipInfo>
         </pedido>
-     
-       
+
+
         <pedido>
             <clienteID>HUNGC</clienteID>
             <EmployeeID>3</EmployeeID>
@@ -223,8 +225,8 @@
                 <ShipCountry>USA</ShipCountry>
             </ShipInfo>
         </pedido>
-      
-       
+
+
         <pedido>
             <clienteID>LETSS</clienteID>
             <EmployeeID>6</EmployeeID>
