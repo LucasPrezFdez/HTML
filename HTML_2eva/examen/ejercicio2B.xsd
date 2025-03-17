@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Defino la clase raiz -->
+    <xs:element name="herbologia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="arbol" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Defino el elemento arbol -->
+    <xs:element name="arbol">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="NombreLatin" />
+                <xs:element ref="NombreComun" />
+                <xs:element ref="Vegetación" />
+                <xs:element ref="Altura" />
+                <xs:element ref="FormaYEstructura" />
+                <xs:element ref="ColorEnPrimavera" />
+                <xs:element ref="ColorEnOtoño" minOccurs="0" />
+                <xs:element ref="ResistenciaALasHeladas" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Todos los elementos de arbol -->
+    <xs:element name="NombreLatin" type="xs:string" />
+    <xs:element name="NombreComun" type="xs:string" />
+    <xs:element name="Vegetación" type="xs:string" />
+    <xs:element name="Altura" type="xs:string" />
+    <xs:element name="FormaYEstructura" type="xs:string" />
+    <xs:element name="ColorEnPrimavera" type="xs:string" />
+    <xs:element name="ColorEnOtoño" type="xs:string" />
+    <xs:element name="ResistenciaALasHeladas" type="xs:string" />
+</xs:schema>

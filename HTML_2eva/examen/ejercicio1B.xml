@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coleccion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejercicio1B.xsd">
+
+    <dvd id="1" idioma="español">
+        <titulo>El Señor de los Anillos: La Comunidad del Anillo</titulo>
+        <director>Peter Jackson</director>
+        <anio>2001</anio>
+        <genero>Fantasía</genero>
+        <duracion>178</duracion>
+        <formato>Blu-ray</formato>
+    </dvd>
+
+    <dvd id="2" idioma="inglés">
+        <titulo>Inception</titulo>
+        <director>Christopher Nolan</director>
+        <anio>2010</anio>
+        <genero>Ciencia ficción</genero>
+        <duracion>148</duracion>
+        <formato>DVD</formato>
+    </dvd>
+
+    <dvd id="3" idioma="italiano">
+        <titulo>La vida es bella</titulo>
+        <director>Roberto Benigni</director>
+        <anio>1997</anio>
+        <genero>Comedia dramática</genero>
+        <duracion>116</duracion>
+        <formato>4K Ultra HD</formato>
+    </dvd>
+
+    <dvd id="4" idioma="francés">
+        <titulo>Amélie</titulo>
+        <director>Jean-Pierre Jeunet</director>
+        <anio>2001</anio>
+        <genero>Comedia romántica</genero>
+        <duracion>122</duracion>
+        <formato>Blu-ray</formato>
+    </dvd>
+
+    <dvd id="5" idioma="español">
+        <titulo>El laberinto del fauno</titulo>
+        <director>Guillermo del Toro</director>
+        <anio>2006</anio>
+        <genero>Fantasía oscura</genero>
+        <duracion>118</duracion>
+        <formato>DVD</formato>
+    </dvd>
+</coleccion>

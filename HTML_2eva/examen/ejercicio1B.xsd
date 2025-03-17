@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Defino la clase raiz -->
+    <xs:element name="coleccion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dvd" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Defino el elemento dvd -->
+    <xs:element name="dvd">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titulo" />
+                <xs:element ref="director" />
+                <xs:element ref="anio" />
+                <xs:element ref="genero" />
+                <xs:element ref="duracion" />
+                <xs:element ref="formato" />
+            </xs:sequence>
+            <!-- Atributos de dvd -->
+            <xs:attribute name="id" use="required" />
+            <xs:attribute name="idioma" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Todos los elementos de dvd -->
+    <xs:element name="titulo" type="xs:string" />
+    <xs:element name="director" type="xs:string" />
+    <xs:element name="anio" type="xs:integer" />
+    <xs:element name="genero" type="xs:string" />
+    <xs:element name="duracion" type="xs:integer" />
+    <xs:element name="formato" type="xs:string" />
+</xs:schema>

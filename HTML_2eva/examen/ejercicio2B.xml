@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<herbologia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejercicio2B.xsd">
+
+    <arbol>
+        <NombreLatin>Fagus sylvatica</NombreLatin>
+        <NombreComun>Haya</NombreComun>
+        <Vegetación>Caducifolio</Vegetación>
+        <Altura>De 30 a 35 metros</Altura>
+        <FormaYEstructura> Copa cónica o redondeada. Tronco principal recto. Ramaje ascendente</FormaYEstructura>
+        <ColorEnPrimavera>Haz verde claro brillante, envés verde pálido</ColorEnPrimavera>
+        <ColorEnOtoño>Amarillo dorado a marrón rojizo</ColorEnOtoño>
+        <ResistenciaALasHeladas>Heladas muy fuertes (hasta -25ºC)</ResistenciaALasHeladas>
+    </arbol>
+    <arbol>
+        <NombreLatin>Pinus pinea</NombreLatin>
+        <NombreComun> Pino piñonero</NombreComun>
+        <Vegetación>Perenne</Vegetación>
+        <Altura>De 20 a 30 metros</Altura>
+        <FormaYEstructura> Copa aparasolada. Tronco principal recto. Ramaje extendido</FormaYEstructura>
+        <ColorEnPrimavera>Verde oscuro</ColorEnPrimavera>
+        <ResistenciaALasHeladas>Heladas medias (hasta -10ºC)</ResistenciaALasHeladas>
+    </arbol>
+    <arbol>
+        <NombreLatin>Betula pendula</NombreLatin>
+        <NombreComun>Abedul</NombreComun>
+        <Vegetación>Caducifolio</Vegetación>
+        <Altura> De 15 a 20 metros</Altura>
+        <FormaYEstructura>Copa piramidal. Tronco principal recto. Ramaje colgante</FormaYEstructura>
+        <ColorEnPrimavera>Verde claro brillante</ColorEnPrimavera>
+        <ColorEnOtoño>Amarillo dorado</ColorEnOtoño>
+        <ResistenciaALasHeladas>Heladas muy fuertes (hasta -30ºC)</ResistenciaALasHeladas>
+    </arbol>
+    <arbol>
+        <NombreLatin>Cedrus atlantica</NombreLatin>
+        <NombreComun>Cedro del Atlas</NombreComun>
+        <Vegetación>Perenne</Vegetación>
+        <Altura>De 30 a 40 metros</Altura>
+        <FormaYEstructura>Copa cónica. Tronco principal recto. Ramaje horizontal</FormaYEstructura>
+        <ColorEnPrimavera>Verde azulado</ColorEnPrimavera>
+        <ResistenciaALasHeladas>Heladas fuertes (hasta -20ºC)</ResistenciaALasHeladas>
+    </arbol>
+</herbologia>
