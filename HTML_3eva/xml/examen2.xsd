@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+    <xs:element name="catalog" type="tipadoCatalogo" />
+
+    <xs:complexType name="tipadoCatalogo">
+        <xs:sequence>
+            <xs:element name="book" type="tipadoLibro" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipadoLibro">
+        <xs:sequence>
+            <xs:element name="title" type="tipoTitle" />
+            <xs:element name="author" type="tipoAuthor" />
+            <xs:element name="year" type="tipoYear" />
+            <xs:element name="publisher" type="tipoPublisher" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoTitle">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="70" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoAuthor">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoYear">
+        <xs:restriction base="xs:gYear">
+            <xs:minInclusive value="1960" />
+            <xs:maxInclusive value="2040" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoPublisher">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Addison-Wesley" />
+            <xs:enumeration value="Prentice Hall" />
+            <xs:enumeration value="MIT Press" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
