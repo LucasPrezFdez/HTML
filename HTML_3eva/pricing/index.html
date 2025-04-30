@@ -37,12 +37,18 @@
           font-size: 3.5rem;
         }
       }
+      .body {
+        background-image: url("https://preview.redd.it/iapqmzd3zu721.jpg?auto=webp&s=d70e6a1f8d6a9b4cfc8bb210d3438ce9a0478169");
+        color: antiquewhite;
+      }
+      .color {
+        color: antiquewhite;
+      }
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="body">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol id="check" viewBox="0 0 16 16">
         <title>Check</title>
@@ -52,13 +58,13 @@
       </symbol>
     </svg>
 
-    <div class="container py-3">
+    <div class="container py-3 text-light">
       <header>
         <div
           class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"
         >
           <a
-            href="/"
+            href="#"
             class="d-flex align-items-center text-dark text-decoration-none"
           >
             <svg
@@ -77,29 +83,22 @@
                 fill="currentColor"
               ></path>
             </svg>
-            <span class="fs-4">Pricing example</span>
+            <span class="fs-4 text-light">Braw Store</span>
           </a>
 
           <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
-              >Features</a
-            >
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
-              >Enterprise</a
-            >
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
-              >Support</a
-            >
-            <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a>
+            <a class="me-3 py-2 text-dark text-light" href="#">Features</a>
+            <a class="me-3 py-2 text-dark text-light" href="#">Enterprise</a>
+            <a class="me-3 py-2 text-dark text-light" href="#">Support</a>
+            <a class="py-2 text-dark text-light" href="#">Pricing</a>
           </nav>
         </div>
 
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h1 class="display-4 fw-normal">Pricing</h1>
-          <p class="fs-5 text-muted">
-            Quickly build an effective pricing table for your potential
-            customers with this Bootstrap example. It’s built with default
-            Bootstrap components and utilities with little customization.
+          <p class="fs-5 color">
+            ¡Compra los pases de batalla de Brawl Stars para hacerte asi con el
+            contenido mas reciente, aspectos legendarios, oro, gemas y más!
           </p>
         </div>
       </header>
@@ -109,23 +108,27 @@
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Free</h4>
+                <h4 class="my-0 fw-normal">
+                  Brawl Pass <br />
+                  <img
+                    src="https://game-assets.store.supercell.com/brawlstars/a34de5b2-05f1-4100-9ef6-468643f72275.png"
+                    class="img-fluid max-width-10"
+                    style="max-width: 20%"
+                  />
+                </h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
-                  $0<small class="text-muted fw-light">/mo</small>
+                  $7<small class="text-muted fw-light">/mo</small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
-                  <li>2 GB of storage</li>
-                  <li>Email support</li>
-                  <li>Help center access</li>
+                  <li>Oro</li>
+                  <li>Gemas</li>
+                  <li>Puntos de fuerza</li>
+                  <li>Aspectos</li>
                 </ul>
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  Sign up for free
+                <button type="button" class="w-100 btn btn-lg btn-primary">
+                  Get Started
                 </button>
               </div>
             </div>
@@ -133,17 +136,24 @@
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Pro</h4>
+                <h4 class="my-0 fw-normal">
+                  Brawl Pass Plus
+                  <br />
+                  <img
+                    src="https://game-assets.store.supercell.com/brawlstars/b7ca1d6d-f770-4714-8dfc-e3a33c339769.png"
+                    class="img-fluid max-width-10"
+                    style="max-width: 20%"
+                  />
+                </h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
                   $15<small class="text-muted fw-light">/mo</small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>20 users included</li>
-                  <li>10 GB of storage</li>
-                  <li>Priority email support</li>
-                  <li>Help center access</li>
+                  <li>Brawl Pass</li>
+                  <li>Experiencia extra</li>
+                  <li>Brawler Epico</li>
                 </ul>
                 <button type="button" class="w-100 btn btn-lg btn-primary">
                   Get started
@@ -156,17 +166,23 @@
               <div
                 class="card-header py-3 text-white bg-primary border-primary"
               >
-                <h4 class="my-0 fw-normal">Enterprise</h4>
+                <h4 class="my-0 fw-normal">
+                  Brawl Pass Pro
+                  <br />
+                  <img
+                    src="https://pbs.twimg.com/media/GjrcCiOXgAAynWr.png"
+                    class="img-fluid max-width-10"
+                    style="max-width: 20%"
+                  />
+                </h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
                   $29<small class="text-muted fw-light">/mo</small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>30 users included</li>
-                  <li>15 GB of storage</li>
-                  <li>Phone and email support</li>
-                  <li>Help center access</li>
+                  <li>Brawl Pass Pro</li>
+                  <li>Aspecto Exclusivo Animado</li>
                 </ul>
                 <button type="button" class="w-100 btn btn-lg btn-primary">
                   Contact us
@@ -183,14 +199,14 @@
             <thead>
               <tr>
                 <th style="width: 34%"></th>
-                <th style="width: 22%">Free</th>
-                <th style="width: 22%">Pro</th>
-                <th style="width: 22%">Enterprise</th>
+                <th style="width: 22%">Brawl Pass</th>
+                <th style="width: 22%">Brawl Pass Plus</th>
+                <th style="width: 22%">Brawl Pass Pro</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row" class="text-start">Public</th>
+                <th scope="row" class="text-start">Oro y Puntos de Fuerza</th>
                 <td>
                   <svg class="bi" width="24" height="24">
                     <use xlink:href="#check" />
@@ -208,7 +224,7 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" class="text-start">Private</th>
+                <th scope="row" class="text-start">Brawler Epico</th>
                 <td></td>
                 <td>
                   <svg class="bi" width="24" height="24">
@@ -225,7 +241,7 @@
 
             <tbody>
               <tr>
-                <th scope="row" class="text-start">Permissions</th>
+                <th scope="row" class="text-start">Gemas</th>
                 <td>
                   <svg class="bi" width="24" height="24">
                     <use xlink:href="#check" />
@@ -243,7 +259,25 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" class="text-start">Sharing</th>
+                <th scope="row" class="text-start">Aspectos</th>
+                <td>
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#check" />
+                  </svg>
+                </td>
+                <td>
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#check" />
+                  </svg>
+                </td>
+                <td>
+                  <svg class="bi" width="24" height="24">
+                    <use xlink:href="#check" />
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Experiencia Extra</th>
                 <td></td>
                 <td>
                   <svg class="bi" width="24" height="24">
@@ -257,21 +291,9 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" class="text-start">Unlimited members</th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Extra security</th>
+                <th scope="row" class="text-start">
+                  Aspecto Animado Exclusivo
+                </th>
                 <td></td>
                 <td></td>
                 <td>
@@ -295,40 +317,30 @@
               width="24"
               height="19"
             />
-            <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+            <small class="d-block mb-3 text-light">&copy; 2017–2021</small>
           </div>
-          <div class="col-6 col-md">
+          <div class="col-6 col-md text-light">
             <h5>Features</h5>
             <ul class="list-unstyled text-small">
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Cool stuff</a
-                >
+                <a class="link-secondary text-light" href="#">Cool stuff</a>
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Random feature</a
-                >
+                <a class="link-secondary text-light" href="#">Random feature</a>
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Team feature</a
-                >
+                <a class="link-secondary text-light" href="#">Team feature</a>
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
+                <a class="link-secondary text-light" href="#"
                   >Stuff for developers</a
                 >
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Another one</a
-                >
+                <a class="link-secondary text-light" href="#">Another one</a>
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Last time</a
-                >
+                <a class="link-secondary text-light" href="#">Last time</a>
               </li>
             </ul>
           </div>
@@ -336,24 +348,18 @@
             <h5>Resources</h5>
             <ul class="list-unstyled text-small">
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Resource</a
-                >
+                <a class="link-secondary text-light" href="#">Resource</a>
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Resource name</a
-                >
+                <a class="link-secondary text-light" href="#">Resource name</a>
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
+                <a class="link-secondary text-light" href="#"
                   >Another resource</a
                 >
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Final resource</a
-                >
+                <a class="link-secondary text-light" href="#">Final resource</a>
               </li>
             </ul>
           </div>
@@ -361,22 +367,16 @@
             <h5>About</h5>
             <ul class="list-unstyled text-small">
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#">Team</a>
+                <a class="link-secondary text-light" href="#">Team</a>
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Locations</a
-                >
+                <a class="link-secondary text-light" href="#">Locations</a>
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Privacy</a
-                >
+                <a class="link-secondary text-light" href="#">Privacy</a>
               </li>
               <li class="mb-1">
-                <a class="link-secondary text-decoration-none" href="#"
-                  >Terms</a
-                >
+                <a class="link-secondary text-light" href="#">Terms</a>
               </li>
             </ul>
           </div>
