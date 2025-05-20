@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Brawl Stars Blog">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Brawl Stars Blog · Bootstrap v5.0</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <!-- Google Fonts para títulos estilo Brawl Stars -->
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Bangers&display=swap" rel="stylesheet">
+  <link href="blog.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #2753a7 5%, #ffcc00 100%);
+    }
+
+    .blog-header-logo {
+      font-family: 'Luckiest Guy', 'Bangers', cursive;
+      font-size: 2.5rem;
+      color: #ffcc00;
+      text-shadow: 2px 2px 0 #222, 4px 4px 0 #000;
+      letter-spacing: 2px;
+    }
+
+    .nav-scroller .nav a {
+      font-family: 'Bangers', cursive;
+      color: #fff;
+      background: #222;
+      border-radius: 10px;
+      margin: 0 2px;
+      padding: 6px 14px;
+      transition: background 0.2s, color 0.2s;
+      border: 2px solid #ffcc00;
+      box-shadow: 1px 1px 0 #000;
+    }
+
+    .nav-scroller .nav a:hover {
+      background: #ffcc00;
+      color: #1a4ba7 !important;
+      border-color: #fff;
+    }
+
+    .btn-outline-primary {
+      font-family: 'Bangers', cursive;
+      border-width: 3px;
+      border-radius: 12px;
+      background: #ffcc00;
+      color: #222;
+      border-color: #222;
+      box-shadow: 2px 2px 0 #000;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-outline-secondary:hover,
+    .btn-outline-primary:hover {
+      background: #222;
+      color: #ffcc00;
+      border-color: #ffcc00;
+    }
+
+    .blog-header {
+      background: url('https://cdn.brawlify.com/backgrounds/bg_brawlstars.jpg') center/cover no-repeat;
+      border-bottom: 5px solid #ffcc00;
+      box-shadow: 0 4px 20px #0008;
+    }
+
+    .bg-dark {
+      background: linear-gradient(120deg, #2753a7 60%, #ffcc00 100%);
+      border: 3px solid #ffcc00;
+      box-shadow: 0 4px 20px #0008;
+    }
+
+    .blog-post-title,
+    h3.fst-italic,
+    h4.fst-italic {
+      font-family: 'Luckiest Guy', 'Bangers', cursive;
+      color: #ffcc00;
+      text-shadow: 2px 2px 0 #222, 4px 4px 0 #000;
+    }
+
+    .blog-post-meta {
+      color: #2753a7;
+      font-weight: bold;
+    }
+
+    .card-text,
+    .blog-post p,
+    .blog-post ul,
+    .blog-post ol,
+    .blog-post dl {
+      font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+      color: #222;
+    }
+
+    .bd-placeholder-img {
+      background: #ffcc00;
+      border: 4px solid #222;
+      border-radius: 18px;
+      box-shadow: 2px 2px 0 #000;
+      font-family: 'Luckiest Guy', cursive;
+      color: #222;
+    }
+
+    .blog-footer {
+      background: #222;
+      color: #ffcc00;
+      border-top: 5px solid #ffcc00;
+      text-align: center;
+      padding: 2rem 0;
+      font-family: 'Bangers', cursive;
+      letter-spacing: 1px;
+      position: relative;
+    }
+
+    .blog-footer::before {
+      content: "";
+      display: block;
+      background: url('https://cdn.brawlify.com/brawlers/silhouette_all.png') center/contain no-repeat;
+      height: 60px;
+      margin-bottom: 10px;
+      opacity: 0.2;
+    }
+
+    /* Avatares y marcos */
+    .blog-post-meta a {
+      border: 2px solid #ffcc00;
+      border-radius: 50%;
+      padding: 2px 8px;
+      background: #fff;
+      color: #2753a7;
+      font-family: 'Bangers', cursive;
+      margin-left: 4px;
+      box-shadow: 1px 1px 0 #000;
+    }
+
+    /* Secciones separadas por rayos */
+    .row.g-5>.col-md-8 {
+      border-right: 6px solid #ffcc00;
+      box-shadow: 4px 0 0 #2753a7;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 0 30px 30px 0;
+      padding-right: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo " href="#">Brawl Stars Blog</a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="link-secondary" href="#" aria-label="Buscar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+              viewBox="0 0 24 24">
+              <title>Buscar</title>
+              <circle cx="10.5" cy="10.5" r="7.5" />
+              <path d="M21 21l-5.2-5.2" />
+            </svg>
+          </a>
+          <a class="btn btn-sm btn-outline-secondary" href="#">Regístrate</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2 letras">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 link-secondary" href="#">Noticias</a>
+        <a class="p-2 link-secondary" href="#">Brawlers</a>
+        <a class="p-2 link-secondary" href="#">Guías</a>
+        <a class="p-2 link-secondary" href="#">Eventos</a>
+        <a class="p-2 link-secondary" href="#">Mapas</a>
+        <a class="p-2 link-secondary" href="#">Actualizaciones</a>
+        <a class="p-2 link-secondary" href="#">Trucos</a>
+        <a class="p-2 link-secondary" href="#">Opinión</a>
+        <a class="p-2 link-secondary" href="#">Esports</a>
+        <a class="p-2 link-secondary" href="#">Clanes</a>
+        <a class="p-2 link-secondary" href="#">Tienda</a>
+        <a class="p-2 link-secondary" href="#">Comunidad</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic">¡Nueva actualización de Brawl Stars!</h1>
+        <p class="lead my-3">Descubre todas las novedades, nuevos brawlers, modos de juego y recompensas que llegan en
+          la última actualización.</p>
+        <p class="lead mb-0"><a href="#" class="text-white fw-bold">Sigue leyendo...</a></p>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Brawlers</strong>
+            <h3 class="mb-0">Brawler destacado: Shelly</h3>
+            <div class="mb-1 text-muted">20 May</div>
+            <p class="card-text mb-auto">Conoce las mejores estrategias para dominar con Shelly en todos los modos de
+              juego.</p>
+            <a href="#" class="stretched-link">Sigue leyendo</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqE-Bf3j7Ciy0gFOCBMyx7fGnkbFwOSeQY8A&s"
+              alt="Shelly Brawl Stars" width="200" height="250"
+              style="object-fit:cover; border-radius:18px; border:4px solid #222; box-shadow:2px 2px 0 #000;">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 ">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Eventos</strong>
+            <h3 class="mb-0">Nuevo evento especial</h3>
+            <div class="mb-1 text-muted">19 May</div>
+            <p class="mb-auto">Participa en el evento de fin de semana y gana recompensas exclusivas.</p>
+            <a href="#" class="stretched-link">Sigue leyendo</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://i.ytimg.com/vi/nzWekFVW9Pw/sddefault.jpg" alt="Nuevo Evento " width="200" height="250"
+              style="object-fit:cover; border-radius:18px; border:4px solid #222; box-shadow:2px 2px 0 #000;">
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-8">
+        <h3 class="pb-4 mb-4 fst-italic border-bottom">
+          Últimas novedades de Brawl Stars
+        </h3>
+
+        <article class="blog-post">
+          <h2 class="blog-post-title">Guía para principiantes</h2>
+          <p class="blog-post-meta">20 de mayo, 2025 por <a href="#">Lukas</a></p>
+
+          <p>En este artículo te mostramos los conceptos básicos para empezar a jugar Brawl Stars y cómo mejorar
+            rápidamente.</p>
+          <hr>
+          <p>Aprende a elegir tu primer brawler, cómo funcionan los modos de juego y consejos para ganar más partidas.
+          </p>
+          <h2>Citas de la comunidad</h2>
+          <p>Esto es lo que opinan los jugadores:</p>
+          <blockquote class="blockquote">
+            <p>"Brawl Stars es el mejor juego para jugar con amigos."</p>
+          </blockquote>
+          <p>¡Únete a la comunidad y comparte tus propias estrategias!</p>
+          <h3>Lista de consejos</h3>
+          <p>Algunos consejos útiles para nuevos jugadores:</p>
+          <ul>
+            <li>Juega en equipo para ganar más partidas</li>
+            <li>Prueba todos los brawlers para encontrar tu favorito</li>
+            <li>Participa en eventos diarios para obtener recompensas</li>
+          </ul>
+          <p>Y aquí una lista ordenada para progresar:</p>
+          <ol>
+            <li>Completa las misiones diarias</li>
+            <li>Mejora tus brawlers favoritos</li>
+            <li>Únete a un club activo</li>
+          </ol>
+          <p>Glosario de términos:</p>
+          <dl>
+            <dt>Brawler</dt>
+            <dd>Personaje jugable en Brawl Stars</dd>
+            <dt>Super</dt>
+            <dd>Habilidad especial de cada brawler</dd>
+            <dt>Gemas</dt>
+            <dd>Moneda premium del juego</dd>
+          </dl>
+          <h2>Elementos destacados</h2>
+          <p>Descubre más sobre los modos de juego en la <a href="https://brawlstars.com/es/game-modes">página
+              oficial</a>.</p>
+          <ul>
+            <li><strong>Para atacar</strong>, usa <code>&lt;ataque&gt;</code>.</li>
+            <li><em>Para esquivar</em>, usa <code>&lt;movimiento&gt;</code>.</li>
+            <li>Las <abbr title="Puntos de Poder">PP</abbr> mejoran a tus brawlers.</li>
+            <li>Citas, como <cite>— Supercell</cite>, usan <code>&lt;cite&gt;</code>.</li>
+            <li><del>Derrotado</del> indica eliminación, <ins>nuevo</ins> indica desbloqueo.</li>
+            <li>Supers <sup>poderosos</sup> y ataques <sub>rápidos</sub>.</li>
+          </ul>
+          <p>¡Sigue practicando para mejorar cada día!</p>
+          <h2>Encabezado</h2>
+          <p>Explora todas las novedades y conviértete en el mejor jugador de Brawl Stars.</p>
+          <h3>Sub-encabezado</h3>
+          <p>Comparte tus logros y estrategias con la comunidad.</p>
+          <pre><code>Ejemplo de código: usa tu super en el momento justo</code></pre>
+          <p>¡Nos vemos en la arena!</p>
+        </article>
+
+        <article class="blog-post">
+          <h2 class="blog-post-title">Actualización de mayo</h2>
+          <p class="blog-post-meta">15 de mayo, 2025 por <a href="#">Supercell</a></p>
+
+          <p>La nueva actualización trae un brawler legendario, nuevos mapas y balance de personajes.</p>
+          <blockquote>
+            <p>¡No te pierdas las recompensas del pase de batalla!</p>
+          </blockquote>
+          <p>Consulta todos los detalles en las notas oficiales.</p>
+          <h3>Tabla de recompensas</h3>
+          <p>Revisa las recompensas de la temporada:</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Recompensa</th>
+                <th>Gemas</th>
+                <th>Monedas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Caja grande</td>
+                <td>10</td>
+                <td>500</td>
+              </tr>
+              <tr>
+                <td>Brawler raro</td>
+                <td>30</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>Skin exclusiva</td>
+                <td>80</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Totales</td>
+                <td>120</td>
+                <td>1500</td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <p>¡Juega todos los días para no perderte nada!</p>
+        </article>
+
+        <article class="blog-post">
+          <h2 class="blog-post-title">Nuevo brawler: Max</h2>
+          <p class="blog-post-meta">10 de mayo, 2025 por <a href="#">Lukas</a></p>
+
+          <p>Max llega a la arena con velocidad y ataques eléctricos. Descubre cómo aprovechar su super para ganar
+            partidas.</p>
+          <ul>
+            <li>Velocidad aumentada</li>
+            <li>Ataques en ráfaga</li>
+            <li>Super que potencia a todo el equipo</li>
+          </ul>
+          <p>¡Desbloquéalo y pruébalo ya!</p>
+        </article>
+
+        <nav class="blog-pagination" aria-label="Paginación">
+          <a class="btn btn-outline-primary" href="#">Anteriores</a>
+          <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Nuevos</a>
+        </nav>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded" style="border: #ffcc00 3px solid;">
+            <h4 class="fst-italic">Sobre el blog</h4>
+            <p class="mb-0">Aquí encontrarás noticias, guías y novedades sobre Brawl Stars. ¡Todo lo que necesitas para
+              mejorar y disfrutar el juego!</p>
+          </div>
+
+          <div class="p-4">
+            <h4 class="fst-italic">Archivo</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="#">Mayo 2025</a></li>
+              <li><a href="#">Abril 2025</a></li>
+              <li><a href="#">Marzo 2025</a></li>
+              <li><a href="#">Febrero 2025</a></li>
+              <li><a href="#">Enero 2025</a></li>
+              <li><a href="#">Diciembre 2024</a></li>
+              <li><a href="#">Noviembre 2024</a></li>
+              <li><a href="#">Octubre 2024</a></li>
+              <li><a href="#">Septiembre 2024</a></li>
+              <li><a href="#">Agosto 2024</a></li>
+              <li><a href="#">Julio 2024</a></li>
+              <li><a href="#">Junio 2024</a></li>
+            </ol>
+          </div>
+
+          <div class="p-4">
+            <h4 class="fst-italic">Redes sociales</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="blog-footer">
+    <p>Blog de Brawl Stars creado por fans. No afiliado a <a href="https://supercell.com/">Supercell</a>.</p>
+    <p>
+      <a href="#">Volver arriba</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pzjw8f+ua7Kw1TIqjQm6Q0p0z2z9idq4U9j+8ABTST5z3e5p5K5p5K5p5K5p5K5" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
