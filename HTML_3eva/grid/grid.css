@@ -1,13 +1,23 @@
-.themed-grid-col {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  background-color: rgba(86, 61, 124, .15);
-  border: 1px solid rgba(86, 61, 124, .2);
+.fw-light.text-center.text-lg-start.mt-4.mb-0 {
+  font-family: helvetica;
 }
 
-.themed-container {
-  padding: .75rem;
-  margin-bottom: 1.5rem;
-  background-color: rgba(0, 123, 255, .15);
-  border: 1px solid rgba(0, 123, 255, .2);
+.año {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fondo {
+  background-image: url("https://i.redd.it/x658k6l5wyy31.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+.contenedor {
+  background-color: aliceblue;
+  padding-top: 40px;
+  border-radius: 5px;
 }
