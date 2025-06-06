@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns="http://ejemplo.org/empresa"
+    xmlns:emp="http://ejemplo.org/empleado"
+    xmlns:pro="http://ejemplo.org/proyecto"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ejemplo.org/empresa empresa.xsd
+                        http://ejemplo.org/empleado empleado.xsd
+                        http://ejemplo.org/proyecto proyecto.xsd"
+>
+
+    <emp:empleado id="1001">
+        <emp:nombre>Lucía</emp:nombre>
+        <emp:apellido>Martínez</emp:apellido>
+        <emp:puesto>Desarrolladora</emp:puesto>
+        <emp:contacto>
+            <emp:email>lucia.martinez@empresa.com</emp:email>
+            <emp:telefono>600123456</emp:telefono>
+        </emp:contacto>
+        <emp:proyectos>
+            <pro:proyecto id="P-001">
+                <pro:nombre>Sistema de Inventario</pro:nombre>
+                <pro:fechaInicio>2024-01-15</pro:fechaInicio>
+                <pro:estado>En curso</pro:estado>
+            </pro:proyecto>
+            <pro:proyecto id="P-002">
+                <pro:nombre>Portal Web</pro:nombre>
+                <pro:fechaInicio>2023-09-01</pro:fechaInicio>
+                <pro:estado>Finalizado</pro:estado>
+            </pro:proyecto>
+        </emp:proyectos>
+    </emp:empleado>
+    <emp:empleado id="1002">
+        <emp:nombre>David</emp:nombre>
+        <emp:apellido>Gómez</emp:apellido>
+        <emp:puesto>Analista</emp:puesto>
+        <emp:contacto>
+            <emp:email>david.gomez@empresa.com</emp:email>
+            <emp:telefono>600654321</emp:telefono>
+        </emp:contacto>
+        <emp:proyectos>
+            <pro:proyecto id="P-003">
+                <pro:nombre>Aplicación Móvil</pro:nombre>
+                <pro:fechaInicio>2024-03-10</pro:fechaInicio>
+                <pro:estado>Planificado</pro:estado>
+            </pro:proyecto>
+        </emp:proyectos>
+    </emp:empleado>
+    <pro:proyecto id="P-004">
+        <pro:nombre>Intranet Corporativa</pro:nombre>
+        <pro:fechaInicio>2025-02-01</pro:fechaInicio>
+        <pro:estado>En análisis</pro:estado>
+        <pro:responsable>
+            <emp:nombre>Lucía</emp:nombre>
+            <emp:apellido>Martínez</emp:apellido>
+        </pro:responsable>
+    </pro:proyecto>
+</empresa>

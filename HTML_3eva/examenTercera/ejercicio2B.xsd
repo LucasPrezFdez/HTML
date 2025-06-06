@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="persona" maxOccurs="unbounded" />
+
+                <xs:element ref="libro" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element name="apellidos" type="xs:string" />
+                <xs:element ref="contacto" />
+                <xs:element ref="direccion" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="contacto">
+        <xs:complexType>
+            <xs:sequence minOccurs="0">
+                <xs:element name="email" minOccurs="0" type="xs:string" />
+                <xs:element name="telefono" minOccurs="0" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="direccion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="calle" type="xs:string" />
+                <xs:element name="ciudad" type="xs:string" />
+                <xs:element name="codigoPostal" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="libro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string" />
+                <xs:element ref="autor" />
+                <xs:element name="editorial" type="xs:string" />
+                <xs:element name="anio" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="isbn" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="autor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element name="apellidos" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

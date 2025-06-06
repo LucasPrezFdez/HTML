@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejercicio2B.xsd"
+>
+    <persona id="1">
+        <nombre>Juan</nombre>
+        <apellidos>Pérez Gómez</apellidos>
+        <contacto>
+            <email>juan.perez@example.com</email>
+        </contacto>
+        <direccion>
+            <calle>Calle Mayor 123</calle>
+            <ciudad>Madrid</ciudad>
+            <codigoPostal>28001</codigoPostal>
+        </direccion>
+    </persona>
+    <persona id="2">
+        <nombre>Ana</nombre>
+        <apellidos>López Ruiz</apellidos>
+        <contacto>
+            <telefono>600123456</telefono>
+        </contacto>
+        <direccion>
+            <calle>Avenida de la Paz 45</calle>
+            <ciudad>Barcelona</ciudad>
+            <codigoPostal>08002</codigoPostal>
+        </direccion>
+    </persona>
+    <libro isbn="978-3-16-148410-0">
+        <titulo>Introducción a XML</titulo>
+        <autor>
+            <nombre>Juan</nombre>
+            <apellidos>Pérez Gómez</apellidos>
+        </autor>
+        <editorial>Editorial Ejemplo</editorial>
+        <anio>2022</anio>
+    </libro>
+    <libro isbn="978-1-23-456789-7">
+        <titulo>Avanzado en XML</titulo>
+        <autor>
+            <nombre>Ana</nombre>
+            <apellidos>López Ruiz</apellidos>
+        </autor>
+        <editorial>Editorial Avanzada</editorial>
+        <anio>2023</anio>
+    </libro>
+</catalogo>

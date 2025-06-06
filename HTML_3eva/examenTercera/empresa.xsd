@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://ejemplo.org/empresa"
+    xmlns="http://ejemplo.org/empresa"
+    xmlns:pro="http://ejemplo.org/proyecto"
+    xmlns:emp="http://ejemplo.org/empleado"
+    elementFormDefault="qualified"
+>
+    <xs:import namespace="http://ejemplo.org/empleado" schemaLocation="empleado.xsd" />
+    <xs:import namespace="http://ejemplo.org/proyecto" schemaLocation="proyecto.xsd" />
+
+    <xs:element name="empresa" type="TipoEmpresa" />
+
+    <xs:complexType name="TipoEmpresa">
+        <xs:sequence>
+            <xs:element ref="emp:empleado" maxOccurs="unbounded" />
+            <xs:element ref="pro:proyecto" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>

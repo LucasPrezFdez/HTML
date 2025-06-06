@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://ejemplo.org/proyecto"
+    xmlns="http://ejemplo.org/proyecto"
+    xmlns:emp="http://ejemplo.org/empleado"
+    elementFormDefault="qualified">
+
+    <xs:import namespace="http://ejemplo.org/empleado" schemaLocation="empleado.xsd" />
+
+    <xs:element name="proyecto" type="TipoProyecto" />
+
+    <xs:complexType name="TipoProyecto">
+        <xs:sequence>
+            <xs:element name="nombre" />
+            <xs:element name="fechaInicio" />
+            <xs:element name="estado" />
+            <xs:element name="responsable">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="emp:empleado" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute ref="id" />
+
+    </xs:complexType>
+
+
+    <xs:attribute name="id">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+</xs:schema>

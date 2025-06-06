@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manolo:document
+    xmlns:manolo="http://ejemplo.org/documento"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xsi:schemaLocation="http://ejemplo.org/documento ejemploMio.xsd"
+>
+    <manolo:title>TITULO DEL DOCUMENTO</manolo:title>
+    <manolo:content>
+        <html:html>
+            <html:head>
+                <html:title>Titulo HTML</html:title>
+            </html:head>
+            <html:body>
+                <html:p>Texto del documento</html:p>
+            </html:body>
+        </html:html>
+    </manolo:content>
+    <manolo:author>Jorge</manolo:author>
+</manolo:document>
